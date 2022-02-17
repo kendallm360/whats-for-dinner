@@ -7,6 +7,117 @@ grey - #95a5a6;
 red - #ee5253
 
 */
+
 body {
   background-size: cover;
+  display: grid;
+  align-items: center;
+}
+
+.title-bar {
+  padding-left: 20;
+  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: #0fb9b1;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: -webkit-fill-available;
+  position: absolute;
+  top: 0px;
+  padding-right: 20px;
+  margin: -10px;
+}
+
+.title-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.button-format {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.recipe {
+  background-color: rgba(225, 225, 225, 0.9);
+  font-family: "Roboto", sans-serif;
+  border: none;
+  padding: 7;
+  border-radius: 5px;
+}
+
+.main-boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-box {
+  height: 400px;
+  width: 500px;
+  background-color: rgba(225, 225, 225, 0.9);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  /* Play with above */
+
+  padding-left: 60px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+span {
+  color: #ee5253;
+}
+
+.open-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+}
+
+.cook {
+  background-color: #0fb9b1;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 50;
+}
+
+.center-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pot-box {
+  height: 400px;
+  width: 500px;
+  background-color: rgba(225, 225, 225, 0.9);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20;
 }
