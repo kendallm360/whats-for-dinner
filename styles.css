@@ -7,6 +7,13 @@ grey - #95a5a6;
 red - #ee5253
 
 */
+
+body {
+  background-size: cover;
+  display: grid;
+  align-items: center;
+}
+
 .title-bar {
   padding-left: 20;
   padding-top: 15px;
@@ -21,8 +28,6 @@ red - #ee5253
   width: -webkit-fill-available;
   position: absolute;
   top: 0px;
-
-  /* justify-content: space-between; */
   padding-right: 20px;
   margin: -10px;
 }
@@ -31,33 +36,21 @@ red - #ee5253
   font-size: 20px;
   font-weight: 300;
 }
-.center-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.title {
-  font-size: 25px;
-  font-weight: 400;
+
+.button-format {
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .recipe {
   background-color: rgba(225, 225, 225, 0.9);
   font-family: "Roboto", sans-serif;
   border: none;
+  padding: 7;
+  border-radius: 5px;
 }
 
-span {
-  color: #ee5253;
-}
-
-body {
-  background-size: cover;
-  display: grid;
-  align-items: center;
-}
-
-.option-boxes {
+.main-boxes {
   display: flex;
   justify-content: space-evenly;
 }
@@ -72,14 +65,6 @@ body {
   justify-content: center;
 }
 
-/* .side {
-  justify-content: space-around;
-  color: black;
-  border: solid 2px;
-  font-size: 13px;
-	class="side"
-} */
-
 .buttons {
   /* display: flex;
   flex-direction: column;
@@ -89,7 +74,16 @@ body {
   padding-left: 60px;
 }
 
-.new {
+.title {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+span {
+  color: #ee5253;
+}
+
+.open-box {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -109,6 +103,12 @@ body {
   display: inline-block;
   font-size: 13px;
   font-weight: 50;
+}
+
+.center-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pot-box {
