@@ -7,8 +7,13 @@ grey - #95a5a6;
 red - #ee5253
 
 */
-.titleBarParent {
-  background-color: white;
+.titleBar {
+  font-size: 25px;
+  padding-left: 20;
+  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: #0fb9b1;
   border: solid 2px black;
   display: flex;
   flex-direction: column;
@@ -21,12 +26,12 @@ red - #ee5253
   top: 0px;
 }
 
-.titleBarContents {
+/* .titleBarContents {
   height: 300px;
   width: 300px;
   background-color: white;
   border: solid 2px black;
-}
+} */
 
 body {
   background-size: cover;
@@ -40,14 +45,14 @@ body {
   align-items: center;
 }
 
-.box1 {
+.contentBox {
   height: 300px;
   width: 300px;
   background-color: rgba(225, 225, 225, 0.9);
   border: solid 5px black;
 }
 
-.box2 {
+.potBox {
   height: 300px;
   width: 300px;
   background-color: rgba(225, 225, 225, 0.9);
