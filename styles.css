@@ -8,22 +8,43 @@ red - #ee5253
 
 */
 .title-bar {
-  font-size: 25px;
   padding-left: 20;
   padding-top: 15px;
   font-family: "Roboto", sans-serif;
   color: black;
   background-color: #0fb9b1;
-  border: solid 2px black;
+  border: none;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
   height: 50px;
   width: -webkit-fill-available;
   position: absolute;
   top: 0px;
+
+  /* justify-content: space-between; */
+  padding-right: 20px;
+  margin: -10px;
+}
+
+.title-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+.center-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.recipe {
+  background-color: rgba(225, 225, 225, 0.9);
+  font-family: "Roboto", sans-serif;
+  border: none;
 }
 
 span {
@@ -39,24 +60,41 @@ body {
 .option-boxes {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .content-box {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
   background-color: rgba(225, 225, 225, 0.9);
-  border: solid 5px black;
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
 
-.side {
+/* .side {
   justify-content: space-around;
   color: black;
-  border: solid 8px;
+  border: solid 2px;
+  font-size: 13px;
+	class="side"
+} */
+
+.buttons {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  /* Play with above */
+
+  padding-left: 60px;
+}
+
+.new {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
 }
 
 .cook {
@@ -74,8 +112,12 @@ body {
 }
 
 .pot-box {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
   background-color: rgba(225, 225, 225, 0.9);
-  border: solid 5px black;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20;
 }
