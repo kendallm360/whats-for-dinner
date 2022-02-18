@@ -12,13 +12,13 @@ var sides = [
 ];
 
 var mains = [
-  "Spaghetti and Meatballs",
+  "Spaghetti Casserole",
   "Pineapple Chicken",
   "Dressing",
   "Mango Stir Fry",
   "Link",
   "Chicken Parmesean",
-  "Butternut Squash Soup",
+  "Cajun Gumbo",
   "BBQ Chicken Burgers",
   "Pho",
   "Quesadilla",
@@ -40,10 +40,9 @@ var desserts = [
   "Truffle Butter",
   "Tres Leches",
   "Bread Pudding",
-  "CookieBrownie",
+  "Cookie Brownie",
   "Apple Pie",
   "Sweet Potato Pie",
-  "Tart",
   "Cupcakes",
   "Strawberry Cake",
 ];
@@ -54,22 +53,13 @@ var log = document.querySelector("#log");
 var sideDishButton = document.querySelector("#side");
 var recipeBox = document.querySelector(".center-pic");
 
-//optionBox.addEventListener("submit" /* ???function(event)??? */);
 cookButton.addEventListener("click", showDish);
-//sideDishButton.addEventListener("click", selectSideDish);
 
-// var radios = document.getElementsByName("dish-selection");
-//
-// for (var i = 0, length = radios.length; i < length; i++) {
-//   if (radios[i].checked) {
-//     console.log(radios[i].value);
-//   }
-// }
+function getRandomInfo(dish) {
+  return Math.floor(Math.random() * dish.length);
+}
 
 function showDish() {
-  // var dishPick = document.querySelector('input[name="dishPick"]:checked').value;
-  // var radioSelection = dishPick.value;
-
   var radios = document.getElementsByName("dish-selection");
 
   for (var i = 0, length = radios.length; i < length; i++) {
@@ -77,7 +67,6 @@ function showDish() {
       var radioSelection = radios[i].value;
     }
   }
-  console.log(radioSelection);
   if (radioSelection === "side") {
     recipeBox.innerHTML = `
     <div class="option-selected">
@@ -98,31 +87,13 @@ function showDish() {
 	    <p class="message-title">You should make:</p>
 	    <p class="message-option">${desserts[getRandomInfo(desserts)] + "!"}</p>
 	    </div>`;
+  } else if (radioSelection === "entire") {
+    recipeBox.innerHTML = `
+    <div class="option-selected">
+    <p class="message-title">You should make:</p>
+    <p class="message-option">${mains[getRandomInfo(mains)]} with a side of ${
+      sides[getRandomInfo(sides)]
+    } and ${desserts[getRandomInfo(desserts)]} for dessert!</p>
+    </div>`;
   }
-  // else if (radioSelection === "entire") {
-  //   recipeBox.innerHTML = `
-  //   <div class="option-selected">
-  //   <p class="message-title">You should make:</p>
-  //   <p class="message-option">${entire[getRandomInfo(entire)] + "!"}</p>
-  //   </div>`;
-  // }
-}
-
-function selectSideDish() {
-  var newSide = sides[getRandomInfo(sides)];
-  return newSide;
-  // console.log(sides);
-  // displayDish(newCover, newTitle, newDescriptor1, newDescriptor2)
-}
-
-function displayDish(newDish) {
-  currentCover = new Cover(newCover, newTitle, newDescriptor1, newDescriptor2);
-  currentTitle.innerText = newTitle;
-  currentImage.src = newCover;
-  currentTagLine1.innerText = newDescriptor1;
-  currentTagLine2.innerText = newDescriptor2;
-}
-
-function getRandomInfo(dish) {
-  return Math.floor(Math.random() * dish.length);
 }
