@@ -74,17 +74,38 @@ function showDish() {
 
   for (var i = 0, length = radios.length; i < length; i++) {
     if (radios[i].checked) {
-      var steve = radios[i].value;
+      var radioSelection = radios[i].value;
     }
   }
-  console.log(steve);
-  if (steve === "side") {
+  console.log(radioSelection);
+  if (radioSelection === "side") {
     recipeBox.innerHTML = `
     <div class="option-selected">
-    <p>You should make:</p>
-    <p>${sides[getRandomInfo(sides)]}</p>
+    <p class="message-title">You should make:</p>
+    <p class="message-option">${sides[getRandomInfo(sides)] + "!"}</p>
     </div>`;
   }
+  if (radioSelection === "main") {
+    recipeBox.innerHTML = `
+	    <div class="option-selected">
+	    <p class="message-title">You should make:</p>
+	    <p class="message-option">${mains[getRandomInfo(mains)] + "!"}</p>
+	    </div>`;
+  }
+  if (radioSelection === "dessert") {
+    recipeBox.innerHTML = `
+	    <div class="option-selected">
+	    <p class="message-title">You should make:</p>
+	    <p class="message-option">${desserts[getRandomInfo(desserts)] + "!"}</p>
+	    </div>`;
+  }
+  // else if (radioSelection === "entire") {
+  //   recipeBox.innerHTML = `
+  //   <div class="option-selected">
+  //   <p class="message-title">You should make:</p>
+  //   <p class="message-option">${entire[getRandomInfo(entire)] + "!"}</p>
+  //   </div>`;
+  // }
 }
 
 function selectSideDish() {
