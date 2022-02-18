@@ -29,29 +29,52 @@
             <p class="title">What are you looking for?<span>*</span></p>
             <div class="option-box">
               <div>
-                <input type="radio" id="side" />
+                <input
+                  type="radio"
+                  id="side"
+                  name="dish-selection"
+                  value="side"
+                  checked
+                />
                 <label for="side"> Side </label>
               </div>
 
               <div>
-                <input type="radio" id="main" />
+                <input
+                  type="radio"
+                  id="main"
+                  name="dish-selection"
+                  value="main"
+                />
                 <label for="main"> Main Dish </label>
               </div>
 
               <div>
-                <input type="radio" id="dessert" />
+                <input
+                  type="radio"
+                  id="dessert"
+                  name="dish-selection"
+                  value="dessert"
+                />
                 <label for="dessert"> Dessert </label>
               </div>
 
               <div>
-                <input type="radio" id="entire" />
+                <input
+                  type="radio"
+                  id="entire"
+                  name="dish-selection"
+                  value="entire"
+                />
                 <label for="entire"> Entire Meal </label>
               </div>
 
               <div>
-                <button class="cook">Let's Cook!</button>
+                <button type="submit" class="cook">Let's Cook!</button>
               </div>
             </div>
+            <!-- added the lines below because mdn said to -->
+            <pre id="log"></pre>
           </div>
         </section>
       </div>
