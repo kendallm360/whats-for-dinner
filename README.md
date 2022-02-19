@@ -35,6 +35,13 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 - App can build an entirely random meal including main, side, and desserts. 
 
 ## Visualization
+See demonstration [here](https://media.giphy.com/media/nZRd1vbjV3RNgIxHGQ/giphy.gif)
 
 ## Web Page
-Visit the page [here] (file:///Users/kendallmcgree/turing/1mod/projects/whats-for-dinner/index.html)
+Visit the page [here](file:///Users/kendallmcgree/turing/1mod/projects/whats-for-dinner/index.html)
+
+## Sources
+
+- MDN
+- W3SCHOOLS
+- ROMCOM
