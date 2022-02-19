@@ -1,52 +1,3 @@
-var sides = [
-  "Miso Glazed Carrots",
-  "Coleslaw",
-  "Potato Salad",
-  "Scalloped Potatoes",
-  "Sweet Potato Tots",
-  "Dirty Rice",
-  "Caeser Salad",
-  "Gyoza",
-  "Garlic Butter Green Beans",
-  "Hush Puppies",
-];
-
-var mains = [
-  "Spaghetti Casserole",
-  "Pineapple Chicken",
-  "Dressing",
-  "Mango Stir Fry",
-  "Link",
-  "Chicken Parmesean",
-  "Cajun Gumbo",
-  "BBQ Chicken Burgers",
-  "Pho",
-  "Quesadilla",
-  "Chicken Fried Steak",
-  "Sheet Pan Fajitas",
-  "Margarita Pizza",
-];
-
-var desserts = [
-  "Apple Pie",
-  "Lemon Apple Pie",
-  "Pound Cake",
-  "Banana Bread",
-  "SnickerDoodle Cookie",
-  "Cheesecake",
-  "Birthday Cake",
-  "Baklava",
-  "Ambrosia",
-  "Truffle Butter",
-  "Tres Leches",
-  "Bread Pudding",
-  "Cookie Brownie",
-  "Apple Pie",
-  "Sweet Potato Pie",
-  "Cupcakes",
-  "Strawberry Cake",
-];
-
 var cookButton = document.querySelector(".cook");
 var optionBox = document.querySelector(".option-box");
 var log = document.querySelector("#log");
@@ -87,7 +38,8 @@ function showDish() {
 	    <p class="message-title">You should make:</p>
 	    <p class="message-option">${desserts[getRandomInfo(desserts)] + "!"}</p>
 	    </div>`;
-  } else if (radioSelection === "entire") {
+  }
+  if (radioSelection === "entire") {
     recipeBox.innerHTML = `
     <div class="option-selected">
     <p class="message-title">You should make:</p>
