@@ -38,7 +38,8 @@ function showDish() {
 	    <p class="message-title">You should make:</p>
 	    <p class="message-option">${desserts[getRandomInfo(desserts)] + "!"}</p>
 	    </div>`;
-  } else if (radioSelection === "entire") {
+  }
+  if (radioSelection === "entire") {
     recipeBox.innerHTML = `
     <div class="option-selected">
     <p class="message-title">You should make:</p>
