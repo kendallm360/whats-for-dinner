@@ -34,8 +34,9 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 - The user clicks to see a random dish appear from the list of possible options for that category.
 
 - When the user selects the “Entire Meal” option they will see a message with a side, main, and dessert option. 
+
 ## Visualization
-See demonstration [here](https://media.giphy.com/media/nZRd1vbjV3RNgIxHGQ/giphy.gif)
+- See a demonstration [here](https://media.giphy.com/media/nZRd1vbjV3RNgIxHGQ/giphy.gif)
 
 ## Deployed Page
 
@@ -56,5 +57,5 @@ See demonstration [here](https://media.giphy.com/media/nZRd1vbjV3RNgIxHGQ/giphy.
 - ROMCOM
 
 ## Contributors
-[Kendall McGree](https://github.com/kendallm360)
+- [Kendall McGree](https://github.com/kendallm360)
 
