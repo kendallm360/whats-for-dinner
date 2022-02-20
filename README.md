@@ -22,7 +22,7 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 - `cd` into the project
 - Read this README thoroughly, then begin working!
 
-## Technologies
+## Technologies USed
 
 - Javascript
 - HTML
@@ -31,14 +31,30 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 
 ## Features
 
-- You can click from a list of dish categories to populate a random dish.
-- App can build an entirely random meal including main, side, and desserts. 
+- The user clicks to see a random dish appear from the list of possible options for that category.
 
+- When the user selects the “Entire Meal” option they will see a message with a side, main, and dessert option. 
 ## Visualization
 See demonstration [here](https://media.giphy.com/media/nZRd1vbjV3RNgIxHGQ/giphy.gif)
+
+## Deployed Page
+
+- Visit the webpage [Here](https://github.com/kendallm360/whats-for-dinner)
+
+## Potential Additonal Features
+
+- Add a “View All Recipes” button.
+
+- When that button is clicked, the user is taken to a new pages that displays all recipe, sorted by recipe type.
+
+- On this page, user should have the ability to add/edit/delete recipe.
 
 ## Sources
 
 - MDN
 - W3SCHOOLS
 - ROMCOM
+
+## Contributors
+[Kendall McGree](https://github.com/kendallm360)
+
